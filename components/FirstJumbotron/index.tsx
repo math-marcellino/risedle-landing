@@ -3,7 +3,7 @@ import ThreeCards from './ThreeCards';
 
 const FirstJumbotron = () => {
     return (
-        <Flex>
+        <Flex alignItems="center" py="40">
             <Flex direction="column" gap="8">
                 <Text fontWeight="bold" fontSize="9xl" lineHeight="136px">
                     Leverage Everything

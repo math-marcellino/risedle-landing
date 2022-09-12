@@ -3,7 +3,7 @@ import { Logo } from '../Icons/Logo';
 
 const Navbar = (props: FlexProps) => {
     return (
-        <Container maxW="6xl">
+        <Container maxW="6xl" position="fixed">
             <Flex justifyContent="space-between" alignItems="center" py="4" {...props}>
                 <HStack spacing="44px">
                     <Logo />
