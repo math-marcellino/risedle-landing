@@ -1,4 +1,5 @@
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, ThemeConfig } from '@chakra-ui/react';
+import colors from './colors';
 
 const breakpoints = {
     mobile: '375px', // => @media (ming-width: 375px) { ... }
@@ -7,10 +8,15 @@ const breakpoints = {
     desktop: '1280px', // => @media (min-width: 1280px) { ... }
 };
 
-const theme = extendTheme({
-    breakpoints,
+const config: ThemeConfig = {
     initialColorMode: 'dark',
     useSystemColorMode: false,
+};
+
+const theme = extendTheme({
+    colors,
+    breakpoints,
+    config,
     styles: {
         global: () => ({
             body: {
