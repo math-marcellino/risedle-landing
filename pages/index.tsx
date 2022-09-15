@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import { Container } from '@chakra-ui/react';
 import Navbar from '../components/Navbar';
 import FirstJumbotron from '../components/FirstJumbotron';
+
 const Home: NextPage = () => {
     return (
         <>
