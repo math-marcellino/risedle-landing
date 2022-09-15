@@ -1,6 +1,7 @@
 import { extendTheme, ThemeConfig } from '@chakra-ui/react';
 import colors from './colors';
-import Text from './components/Text'; 
+import Text from './components/Text';
+import Button from './components/Button';
 
 const breakpoints = {
     mobile: '375px', // => @media (ming-width: 375px) { ... }
@@ -16,7 +17,8 @@ const config: ThemeConfig = {
 
 const theme = extendTheme({
     components: {
-        Text
+        Text,
+        Button,
     },
     colors,
     breakpoints,
