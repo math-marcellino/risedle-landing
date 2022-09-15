@@ -23,8 +23,12 @@ const FirstJumbotron = () => {
                     top of Fuse
                 </Text>
                 <Flex gap="2.5">
-                    <Button>Explore Risedle</Button>
-                    <Button>Documentation</Button>
+                    <Button size="lg" variant="primary.default">
+                        Explore Risedle
+                    </Button>
+                    <Button size="lg" variant="secondary.default">
+                        Documentation
+                    </Button>
                 </Flex>
             </Flex>
             <ThreeCards position="absolute" right="0" />

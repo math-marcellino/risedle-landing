@@ -1,4 +1,4 @@
-import { Flex, FlexProps, Link, Button, HStack, Container } from '@chakra-ui/react';
+import { Flex, FlexProps, Link, Button, HStack, Container, Text } from '@chakra-ui/react';
 import { Logo } from '../Icons/Logo';
 
 const Navbar = (props: FlexProps) => {
@@ -8,12 +8,41 @@ const Navbar = (props: FlexProps) => {
                 <HStack spacing="44px">
                     <Logo />
                     <HStack spacing="8">
-                        <Link>Docs</Link>
-                        <Link>Discord</Link>
-                        <Link>Twitter</Link>
+                        <Link isExternal>
+                            <Text
+                                variant="heading.h7"
+                                color="dark.neutral.soft"
+                                opacity="0.8"
+                                textDecoration="none"
+                            >
+                                Docs
+                            </Text>
+                        </Link>
+                        <Link isExternal>
+                            <Text
+                                variant="heading.h7"
+                                color="dark.neutral.soft"
+                                opacity="0.8"
+                                textDecoration="none"
+                            >
+                                Discord
+                            </Text>
+                        </Link>
+                        <Link isExternal>
+                            <Text
+                                variant="heading.h7"
+                                color="dark.neutral.soft"
+                                opacity="0.8"
+                                textDecoration="none"
+                            >
+                                Twitter
+                            </Text>
+                        </Link>
                     </HStack>
                 </HStack>
-                <Button>Explore Risedle</Button>
+                <Button size="md" variant="secondary.default">
+                    Explore Risedle
+                </Button>
             </Flex>
         </Container>
     );
