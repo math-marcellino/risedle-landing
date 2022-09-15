@@ -4,9 +4,21 @@ import ThreeCards from './ThreeCards';
 const FirstJumbotron = () => {
     return (
         <Flex alignItems="center" py="40">
-            <Flex direction="column" gap="8">
-                <Text variant="display.d1">Leverage Everything</Text>
-                <Text>
+            <Flex direction="column" gap="12" maxW="2xl">
+                <Text
+                    display="flex"
+                    variant="heading.h0"
+                    color="dark.neutral.primary"
+                    textShadow="sm"
+                >
+                    Leverage Everything
+                </Text>
+                <Text
+                    variant="paragraph.xl"
+                    color="dark.neutral.medium"
+                    opacity="0.7"
+                    textShadow="sm"
+                >
                     Boost your exposure to any crypto assets or create your own leverage market on
                     top of Fuse
                 </Text>
@@ -15,7 +27,7 @@ const FirstJumbotron = () => {
                     <Button>Documentation</Button>
                 </Flex>
             </Flex>
-            <ThreeCards />
+            <ThreeCards position="absolute" right="0" />
         </Flex>
     );
 };

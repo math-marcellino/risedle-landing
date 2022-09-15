@@ -67,9 +67,13 @@ const Card = (props: CardProps) => {
             >
                 <Logo />
                 <Image src={`/assets/${token}.svg`} w="175px" h="175px" />
-                <VStack>
-                    <Text>Auto-boosted ETH</Text>
-                    <Text>Boost to claim your position</Text>
+                <VStack spacing="0">
+                    <Text variant="heading.h5" color="dark.neutral.primary" opacity="0.8">
+                        Auto-boosted ETH
+                    </Text>
+                    <Text variant="paragraph.s" color="light.background" opacity="0.4">
+                        Boost to claim your position
+                    </Text>
                 </VStack>
             </Flex>
         </ChakraBox>

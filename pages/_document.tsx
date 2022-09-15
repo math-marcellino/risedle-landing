@@ -279,7 +279,7 @@ export default function Document() {
                     crossOrigin=""
                 />
             </Head>
-            <body>
+            <body style={{ overflowX: 'hidden' }}>
                 <ColorModeScript initialColorMode="dark" />
                 <Main />
                 <NextScript />

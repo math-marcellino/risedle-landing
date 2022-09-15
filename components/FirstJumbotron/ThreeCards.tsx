@@ -6,7 +6,9 @@ const ThreeCards = (props: BoxProps) => {
         <Box
             position="relative"
             maxW="fit-content"
-            transform={{ base: 'scale(0.8)', tablet: 'none', laptop: 'scale(1.3)' }}
+            transform="auto"
+            scale={{ base: '0.8', tablet: 'none', laptop: '1.3' }}
+            {...props}
         >
             <Card
                 token="DPX"
