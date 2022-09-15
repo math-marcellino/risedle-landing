@@ -5,9 +5,7 @@ const FirstJumbotron = () => {
     return (
         <Flex alignItems="center" py="40">
             <Flex direction="column" gap="8">
-                <Text fontWeight="bold" fontSize="9xl" lineHeight="136px">
-                    Leverage Everything
-                </Text>
+                <Text variant="display.d1">Leverage Everything</Text>
                 <Text>
                     Boost your exposure to any crypto assets or create your own leverage market on
                     top of Fuse
