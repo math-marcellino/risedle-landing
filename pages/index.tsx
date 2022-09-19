@@ -5,7 +5,7 @@ import FirstJumbotron from '../components/FirstJumbotron';
 const Home: NextPage = () => {
     return (
         <>
-            <Container maxW="6xl">
+            <Container maxW="6xl" px={{ base: '4', tablet: '44px' }}>
                 <Navbar />
                 <FirstJumbotron />
             </Container>
