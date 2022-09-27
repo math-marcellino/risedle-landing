@@ -55,11 +55,11 @@ const FirstJumbotron = () => {
                     </Button>
                 </Flex>
             </Flex>
-            <ThreeCards
+            {/* <ThreeCards
                 position={{ base: 'relative', tablet: 'absolute' }}
                 right="0"
                 translateX={{ base: '0', tablet: '60%' }}
-            />
+            /> */}
         </Flex>
     );
 };
