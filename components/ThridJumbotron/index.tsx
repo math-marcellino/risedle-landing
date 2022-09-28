@@ -1,17 +1,21 @@
-import { Box, Flex, VStack, Text, Button } from '@chakra-ui/react';
+import { Image, Flex, VStack, Text, Button } from '@chakra-ui/react';
+import { EthriseGradient, AvaxriseGradient, GohmriseGradient } from './Gradients';
 
 const ThirdJumbotron = () => {
     return (
         <Flex
+            position="relative"
             justifyContent="space-between"
             alignItems="center"
             direction={{ base: 'column', laptop: 'row' }}
             gap={{ base: '72px', tablet: '16', laptop: '0' }}
+            py={{ base: '60', laptop: '96' }}
         >
             <VStack
                 align={{ base: 'middle', laptop: 'start' }}
                 spacing="16"
                 maxW={{ desktop: '648px', laptop: '460px' }}
+                zIndex="20"
             >
                 <VStack align={{ base: 'center', laptop: 'start' }} spacing="6">
                     <Text
@@ -47,6 +51,7 @@ const ThirdJumbotron = () => {
                 justifyContent="center"
                 flexWrap="wrap"
                 gap="72px"
+                zIndex="20"
             >
                 <VStack align={{ base: 'center', laptop: 'start' }} spacing="4">
                     <Text
@@ -90,6 +95,45 @@ const ThirdJumbotron = () => {
             >
                 Open Position &rarr;
             </Button>
+            <EthriseGradient
+                position="absolute"
+                top={{ base: '48', tablet: '0' }}
+                right={{
+                    base: '-730px',
+                    tablet: '-670px',
+                    laptop: '-1100px',
+                    desktop: '-820px',
+                }}
+                zIndex="10"
+            />
+            <GohmriseGradient
+                position="absolute"
+                top="28"
+                left={{
+                    base: '-1100px',
+                    tablet: '-1000px',
+                    laptop: '-750px',
+                    desktop: '-800px',
+                }}
+                bottom={{ tablet: '24', laptop: '28', desktop: '8' }}
+                zIndex="10"
+            />
+            <AvaxriseGradient
+                position="absolute"
+                bottom={{ base: '80', tablet: '36', laptop: '0', desktop: '24' }}
+                left={{ base: '-600px', tablet: '-620px', laptop: '-320px', desktop: '-420px' }}
+                zIndex="10"
+            />
+            <Image
+                src="/assets/grid.png"
+                position="absolute"
+                top={{ base: '570px', tablet: '96', laptop: '290px', desktop: '48' }}
+                transform="auto"
+                scale={{ base: '250%', tablet: '150%', laptop: '100%' }}
+                right={{ laptop: '-20', desktop: '-630px' }}
+                h={{ laptop: '600px', desktop: '720px' }}
+                zIndex="0"
+            />
         </Flex>
     );
 };
