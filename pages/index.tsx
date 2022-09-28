@@ -7,7 +7,9 @@ import ThirdJumbotron from '../components/ThridJumbotron';
 const Home: NextPage = () => {
     return (
         <>
-            <Container maxW="6xl" px={{ base: '4', tablet: '44px' }}>
+            <Container
+                maxW={{ base: '343px', tablet: '552px', laptop: '936px', desktop: '1128px' }}
+            >
                 <Navbar />
                 <FirstJumbotron />
                 <ThirdJumbotron />

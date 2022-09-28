@@ -22,6 +22,7 @@ const ThirdJumbotron = () => {
                         variant={{ base: 'heading.h1', desktop: 'heading.h0' }}
                         color="dark.neutral.primary"
                         textAlign={{ base: 'center', laptop: 'left' }}
+                        whiteSpace={{ tablet: 'nowrap', laptop: 'normal' }}
                     >
                         Reliable & Trusted
                     </Text>
@@ -92,6 +93,7 @@ const ThirdJumbotron = () => {
                 size={{ base: 'md', desktop: 'lg' }}
                 display={{ base: 'flex', laptop: 'none' }}
                 w="fit-content"
+                zIndex="20"
             >
                 Open Position &rarr;
             </Button>

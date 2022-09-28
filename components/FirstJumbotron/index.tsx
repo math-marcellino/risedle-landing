@@ -58,7 +58,7 @@ const FirstJumbotron = () => {
             <ThreeCards
                 position={{ base: 'relative', tablet: 'absolute' }}
                 right="0"
-                translateX={{ base: '0', tablet: '60%' }}
+                translateX={{ base: '0', tablet: '6%', laptop: '5%', desktop: '37%' }}
             />
         </Flex>
     );
