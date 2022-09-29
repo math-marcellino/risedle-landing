@@ -1,10 +1,10 @@
-import { Grid, VStack, Text, Button } from '@chakra-ui/react';
+import { Grid, VStack, Text, Button, Box } from '@chakra-ui/react';
 import { FourthJumbotronBox, FourthJumbotronTitle } from './FourthJumbotronComponents';
 
 const FourthJumbotron = () => {
     return (
-        <VStack spacing={{ base: '16', laptop: '68px', desktop: '20' }}>
-            <VStack spacing="7" align="start">
+        <VStack align="start" spacing={{ base: '16', laptop: '68px', desktop: '20' }}>
+            <VStack spacing="7" align="start" maxW={{ laptop: '556px', desktop: '935px' }}>
                 <Text
                     variant={{ base: 'heading.h1', desktop: 'heading.h0' }}
                     color="dark.neutral.primary"
@@ -12,6 +12,7 @@ const FourthJumbotron = () => {
                 >
                     Dive Deeper Into Risedle
                 </Text>
+
                 <Text
                     variant={{
                         base: 'paragraph.m',
@@ -20,6 +21,7 @@ const FourthJumbotron = () => {
                     }}
                     color="dark.neutral.soft"
                     maxW={{ base: 'full', laptop: '434px' }}
+                    textAlign={{ base: 'center', laptop: 'start' }}
                 >
                     Read our docs, join our Discord, or jump into our Twitter account to get more
                     learning resources!

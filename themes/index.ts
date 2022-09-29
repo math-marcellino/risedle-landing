@@ -4,10 +4,10 @@ import Text from './components/Text';
 import Button from './components/Button';
 
 const breakpoints = {
-    mobile: '375px', // => @media (ming-width: 375px) { ... }
-    tablet: '640px', // => @media (min-width: 640px) { ... }
-    laptop: '1024px', // => @media (min-width: 1024px) { ... }
-    desktop: '1280px', // => @media (min-width: 1280px) { ... }
+    mobile: '23.438em', // => @media (ming-width: 375px) { ... }
+    tablet: '40em', // => @media (min-width: 640px) { ... }
+    laptop: '64em', // => @media (min-width: 1024px) { ... }
+    desktop: '80em', // => @media (min-width: 1280px) { ... }
 };
 
 const config: ThemeConfig = {
