@@ -1,4 +1,4 @@
-import { Grid, VStack, Text, Button, Box } from '@chakra-ui/react';
+import { Grid, VStack, Text, Button } from '@chakra-ui/react';
 import { FourthJumbotronBox, FourthJumbotronTitle } from './FourthJumbotronComponents';
 
 const FourthJumbotron = () => {
@@ -36,7 +36,11 @@ const FourthJumbotron = () => {
                 gap="6"
                 w="full"
             >
-                <FourthJumbotronBox>
+                <FourthJumbotronBox
+                    bgImage="url('/assets/socials/docs.svg')"
+                    bgRepeat="no-repeat"
+                    bgPosition="right top"
+                >
                     <FourthJumbotronTitle>Documentation</FourthJumbotronTitle>
                     <Button
                         variant="secondary.default"
@@ -47,7 +51,11 @@ const FourthJumbotron = () => {
                         Read Docs
                     </Button>
                 </FourthJumbotronBox>
-                <FourthJumbotronBox>
+                <FourthJumbotronBox
+                    bgImage="url('/assets/socials/discord.svg')"
+                    bgRepeat="no-repeat"
+                    bgPosition="right top"
+                >
                     <FourthJumbotronTitle>Discord Server</FourthJumbotronTitle>
                     <Button
                         variant="secondary.default"
@@ -58,7 +66,12 @@ const FourthJumbotron = () => {
                         Join Discord
                     </Button>
                 </FourthJumbotronBox>
-                <FourthJumbotronBox colSpan={{ tablet: 2, laptop: 1 }}>
+                <FourthJumbotronBox
+                    colSpan={{ tablet: 2, laptop: 1 }}
+                    bgImage="url('/assets/socials/twitter.svg')"
+                    bgRepeat="no-repeat"
+                    bgPosition="right top"
+                >
                     <FourthJumbotronTitle>Twitter</FourthJumbotronTitle>
                     <Button
                         variant="secondary.default"

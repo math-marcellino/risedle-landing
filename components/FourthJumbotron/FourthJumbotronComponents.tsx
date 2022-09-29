@@ -14,7 +14,7 @@ const FourthJumbotronBox = (props: FourthJumbotronBoxProps) => {
             justifyContent="space-between"
             minH="60"
             direction="column"
-            bgColor="dark.background.elevated"
+            bgColor="dark.background.card"
             borderRadius="3xl"
             px="8"
             pt="9"
