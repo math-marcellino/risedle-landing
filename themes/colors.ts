@@ -57,6 +57,10 @@ const colors = {
             medium: '#A70165',
         },
     },
+    brand: {
+        discord: '#5B64EA',
+        twitter: '#3292D8',
+    },
 };
 
 export default colors;
