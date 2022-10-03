@@ -2,8 +2,10 @@ import type { NextPage } from 'next';
 import { Container } from '@chakra-ui/react';
 import Navbar from '../components/Navbar';
 import FirstJumbotron from '../components/FirstJumbotron';
+import SecondJumbotron from '../components/SecondJumbotron';
 import ThirdJumbotron from '../components/ThridJumbotron';
 import FourthJumbotron from '../components/FourthJumbotron';
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
     return (
@@ -14,8 +16,10 @@ const Home: NextPage = () => {
             >
                 <Navbar />
                 <FirstJumbotron />
+                <SecondJumbotron />
                 <ThirdJumbotron />
                 <FourthJumbotron />
+                <Footer />
             </Container>
         </>
     );

@@ -28,6 +28,11 @@ const colors = {
             subtle: '#EEF0FC',
         },
     },
+    gray: {
+        light: {
+            10: "#858585",
+        },
+    },
     status: {
         active: '#7303C0',
         default: '#8E93AF',
