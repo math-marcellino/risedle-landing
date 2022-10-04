@@ -1,4 +1,4 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 import BackgroundBox from "./BackgroundBox";
 import { SecondJumbotronSection } from "./Section";
 
