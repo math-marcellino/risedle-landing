@@ -7,6 +7,11 @@ const baseStyle = {
     alignItems: 'center',
     gap: '2',
     borderRadius: 'lg',
+    _disabled: {
+        pointerEvents: 'none',
+        bgColor: 'dark.background.disabled',
+        color: 'dark.neutral.soft',
+    },
 };
 
 const sizes = {
@@ -132,6 +137,7 @@ const Button: ComponentStyleConfig = {
                 color: 'dark.neutral.primary',
                 bgColor: 'dark.background.subtle',
             },
+            _disabled: { bgColor: 'transparent' },
         },
         'ghost.yellow': {
             color: 'semantic.yellow.strong',
@@ -141,6 +147,7 @@ const Button: ComponentStyleConfig = {
                 color: 'semantic.yellow.strong',
                 bgColor: 'semantic.yellow.dim',
             },
+            _disabled: { bgColor: 'transparent' },
         },
         'ghost.purple': {
             color: 'semantic.purple.strong',
@@ -150,6 +157,7 @@ const Button: ComponentStyleConfig = {
                 color: 'semantic.purple.strong',
                 bgColor: 'semantic.purple.dim',
             },
+            _disabled: { bgColor: 'transparent' },
         },
         'ghost.green': {
             color: 'semantic.green.strong',
@@ -159,6 +167,7 @@ const Button: ComponentStyleConfig = {
                 color: 'semantic.green.strong',
                 bgColor: 'semantic.green.dim',
             },
+            _disabled: { bgColor: 'transparent' },
         },
         'ghost.red': {
             color: 'semantic.red.strong',
@@ -168,6 +177,7 @@ const Button: ComponentStyleConfig = {
                 color: 'semantic.red.strong',
                 bgColor: 'semantic.red.dim',
             },
+            _disabled: { bgColor: 'transparent' },
         },
     },
 };
